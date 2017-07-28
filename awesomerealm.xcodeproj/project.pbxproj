@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1848BD971F2B3B64000AEB70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1848BD961F2B3B64000AEB70 /* AppDelegate.swift */; };
+		1848BD991F2B3B64000AEB70 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1848BD981F2B3B64000AEB70 /* FirstViewController.swift */; };
+		1848BD9B1F2B3B64000AEB70 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1848BD9A1F2B3B64000AEB70 /* SecondViewController.swift */; };
+		1848BD9E1F2B3B64000AEB70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1848BD9C1F2B3B64000AEB70 /* Main.storyboard */; };
+		1848BDA01F2B3B64000AEB70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1848BD9F1F2B3B64000AEB70 /* Assets.xcassets */; };
+		1848BDA31F2B3B64000AEB70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1848BDA11F2B3B64000AEB70 /* LaunchScreen.storyboard */; };
+		1848BDAE1F2B3B64000AEB70 /* awesomerealmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1848BDAD1F2B3B64000AEB70 /* awesomerealmTests.swift */; };
+		1848BDB91F2B3B64000AEB70 /* awesomerealmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1848BDB81F2B3B64000AEB70 /* awesomerealmUITests.swift */; };
+		1848BDC81F2B3F02000AEB70 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1848BDC61F2B3F02000AEB70 /* Realm.framework */; };
+		1848BDCB1F2B3F0F000AEB70 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1848BDC61F2B3F02000AEB70 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1848BDCD1F2B3F12000AEB70 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1848BDC71F2B3F02000AEB70 /* RealmSwift.framework */; };
+		1848BDCE1F2B3F12000AEB70 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1848BDC71F2B3F02000AEB70 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1848BDD01F2B5857000AEB70 /* allRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1848BDCF1F2B5857000AEB70 /* allRealm.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1848BDAA1F2B3B64000AEB70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1848BD8B1F2B3B64000AEB70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1848BD921F2B3B64000AEB70;
+			remoteInfo = awesomerealm;
+		};
+		1848BDB51F2B3B64000AEB70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1848BD8B1F2B3B64000AEB70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1848BD921F2B3B64000AEB70;
+			remoteInfo = awesomerealm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1848BDCC1F2B3F0F000AEB70 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1848BDCE1F2B3F12000AEB70 /* RealmSwift.framework in Embed Frameworks */,
+				1848BDCB1F2B3F0F000AEB70 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1848BD931F2B3B64000AEB70 /* awesomerealm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = awesomerealm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1848BD961F2B3B64000AEB70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1848BD981F2B3B64000AEB70 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		1848BD9A1F2B3B64000AEB70 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		1848BD9D1F2B3B64000AEB70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1848BD9F1F2B3B64000AEB70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1848BDA21F2B3B64000AEB70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1848BDA41F2B3B64000AEB70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1848BDA91F2B3B64000AEB70 /* awesomerealmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = awesomerealmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1848BDAD1F2B3B64000AEB70 /* awesomerealmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = awesomerealmTests.swift; sourceTree = "<group>"; };
+		1848BDAF1F2B3B64000AEB70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1848BDB41F2B3B64000AEB70 /* awesomerealmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = awesomerealmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1848BDB81F2B3B64000AEB70 /* awesomerealmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = awesomerealmUITests.swift; sourceTree = "<group>"; };
+		1848BDBA1F2B3B64000AEB70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1848BDC61F2B3F02000AEB70 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = awesomerealm/Realm.framework; sourceTree = "<group>"; };
+		1848BDC71F2B3F02000AEB70 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = awesomerealm/RealmSwift.framework; sourceTree = "<group>"; };
+		1848BDCF1F2B5857000AEB70 /* allRealm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = allRealm.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1848BD901F2B3B64000AEB70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1848BDCD1F2B3F12000AEB70 /* RealmSwift.framework in Frameworks */,
+				1848BDC81F2B3F02000AEB70 /* Realm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1848BDA61F2B3B64000AEB70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1848BDB11F2B3B64000AEB70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1848BD8A1F2B3B64000AEB70 = {
+			isa = PBXGroup;
+			children = (
+				1848BDC61F2B3F02000AEB70 /* Realm.framework */,
+				1848BDC71F2B3F02000AEB70 /* RealmSwift.framework */,
+				1848BD951F2B3B64000AEB70 /* awesomerealm */,
+				1848BDAC1F2B3B64000AEB70 /* awesomerealmTests */,
+				1848BDB71F2B3B64000AEB70 /* awesomerealmUITests */,
+				1848BD941F2B3B64000AEB70 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1848BD941F2B3B64000AEB70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1848BD931F2B3B64000AEB70 /* awesomerealm.app */,
+				1848BDA91F2B3B64000AEB70 /* awesomerealmTests.xctest */,
+				1848BDB41F2B3B64000AEB70 /* awesomerealmUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1848BD951F2B3B64000AEB70 /* awesomerealm */ = {
+			isa = PBXGroup;
+			children = (
+				1848BD961F2B3B64000AEB70 /* AppDelegate.swift */,
+				1848BD981F2B3B64000AEB70 /* FirstViewController.swift */,
+				1848BDCF1F2B5857000AEB70 /* allRealm.swift */,
+				1848BD9A1F2B3B64000AEB70 /* SecondViewController.swift */,
+				1848BD9C1F2B3B64000AEB70 /* Main.storyboard */,
+				1848BD9F1F2B3B64000AEB70 /* Assets.xcassets */,
+				1848BDA11F2B3B64000AEB70 /* LaunchScreen.storyboard */,
+				1848BDA41F2B3B64000AEB70 /* Info.plist */,
+			);
+			path = awesomerealm;
+			sourceTree = "<group>";
+		};
+		1848BDAC1F2B3B64000AEB70 /* awesomerealmTests */ = {
+			isa = PBXGroup;
+			children = (
+				1848BDAD1F2B3B64000AEB70 /* awesomerealmTests.swift */,
+				1848BDAF1F2B3B64000AEB70 /* Info.plist */,
+			);
+			path = awesomerealmTests;
+			sourceTree = "<group>";
+		};
+		1848BDB71F2B3B64000AEB70 /* awesomerealmUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1848BDB81F2B3B64000AEB70 /* awesomerealmUITests.swift */,
+				1848BDBA1F2B3B64000AEB70 /* Info.plist */,
+			);
+			path = awesomerealmUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1848BD921F2B3B64000AEB70 /* awesomerealm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1848BDBD1F2B3B64000AEB70 /* Build configuration list for PBXNativeTarget "awesomerealm" */;
+			buildPhases = (
+				1848BD8F1F2B3B64000AEB70 /* Sources */,
+				1848BD901F2B3B64000AEB70 /* Frameworks */,
+				1848BD911F2B3B64000AEB70 /* Resources */,
+				1848BDCC1F2B3F0F000AEB70 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = awesomerealm;
+			productName = awesomerealm;
+			productReference = 1848BD931F2B3B64000AEB70 /* awesomerealm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1848BDA81F2B3B64000AEB70 /* awesomerealmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1848BDC01F2B3B64000AEB70 /* Build configuration list for PBXNativeTarget "awesomerealmTests" */;
+			buildPhases = (
+				1848BDA51F2B3B64000AEB70 /* Sources */,
+				1848BDA61F2B3B64000AEB70 /* Frameworks */,
+				1848BDA71F2B3B64000AEB70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1848BDAB1F2B3B64000AEB70 /* PBXTargetDependency */,
+			);
+			name = awesomerealmTests;
+			productName = awesomerealmTests;
+			productReference = 1848BDA91F2B3B64000AEB70 /* awesomerealmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1848BDB31F2B3B64000AEB70 /* awesomerealmUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1848BDC31F2B3B64000AEB70 /* Build configuration list for PBXNativeTarget "awesomerealmUITests" */;
+			buildPhases = (
+				1848BDB01F2B3B64000AEB70 /* Sources */,
+				1848BDB11F2B3B64000AEB70 /* Frameworks */,
+				1848BDB21F2B3B64000AEB70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1848BDB61F2B3B64000AEB70 /* PBXTargetDependency */,
+			);
+			name = awesomerealmUITests;
+			productName = awesomerealmUITests;
+			productReference = 1848BDB41F2B3B64000AEB70 /* awesomerealmUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1848BD8B1F2B3B64000AEB70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = apple;
+				TargetAttributes = {
+					1848BD921F2B3B64000AEB70 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					1848BDA81F2B3B64000AEB70 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 59N8QSLF84;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1848BD921F2B3B64000AEB70;
+					};
+					1848BDB31F2B3B64000AEB70 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 59N8QSLF84;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1848BD921F2B3B64000AEB70;
+					};
+				};
+			};
+			buildConfigurationList = 1848BD8E1F2B3B64000AEB70 /* Build configuration list for PBXProject "awesomerealm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1848BD8A1F2B3B64000AEB70;
+			productRefGroup = 1848BD941F2B3B64000AEB70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1848BD921F2B3B64000AEB70 /* awesomerealm */,
+				1848BDA81F2B3B64000AEB70 /* awesomerealmTests */,
+				1848BDB31F2B3B64000AEB70 /* awesomerealmUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1848BD911F2B3B64000AEB70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1848BDA31F2B3B64000AEB70 /* LaunchScreen.storyboard in Resources */,
+				1848BDA01F2B3B64000AEB70 /* Assets.xcassets in Resources */,
+				1848BD9E1F2B3B64000AEB70 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1848BDA71F2B3B64000AEB70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1848BDB21F2B3B64000AEB70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1848BD8F1F2B3B64000AEB70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1848BD9B1F2B3B64000AEB70 /* SecondViewController.swift in Sources */,
+				1848BD971F2B3B64000AEB70 /* AppDelegate.swift in Sources */,
+				1848BD991F2B3B64000AEB70 /* FirstViewController.swift in Sources */,
+				1848BDD01F2B5857000AEB70 /* allRealm.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1848BDA51F2B3B64000AEB70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1848BDAE1F2B3B64000AEB70 /* awesomerealmTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1848BDB01F2B3B64000AEB70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1848BDB91F2B3B64000AEB70 /* awesomerealmUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1848BDAB1F2B3B64000AEB70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1848BD921F2B3B64000AEB70 /* awesomerealm */;
+			targetProxy = 1848BDAA1F2B3B64000AEB70 /* PBXContainerItemProxy */;
+		};
+		1848BDB61F2B3B64000AEB70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1848BD921F2B3B64000AEB70 /* awesomerealm */;
+			targetProxy = 1848BDB51F2B3B64000AEB70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1848BD9C1F2B3B64000AEB70 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1848BD9D1F2B3B64000AEB70 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1848BDA11F2B3B64000AEB70 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1848BDA21F2B3B64000AEB70 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1848BDBB1F2B3B64000AEB70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1848BDBC1F2B3B64000AEB70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1848BDBE1F2B3B64000AEB70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/awesomerealm",
+				);
+				INFOPLIST_FILE = awesomerealm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MadisonDeanMax.awesomerealm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1848BDBF1F2B3B64000AEB70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/awesomerealm",
+				);
+				INFOPLIST_FILE = awesomerealm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MadisonDeanMax.awesomerealm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1848BDC11F2B3B64000AEB70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 59N8QSLF84;
+				INFOPLIST_FILE = awesomerealmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MadisonDeanMax.awesomerealmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/awesomerealm.app/awesomerealm";
+			};
+			name = Debug;
+		};
+		1848BDC21F2B3B64000AEB70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 59N8QSLF84;
+				INFOPLIST_FILE = awesomerealmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MadisonDeanMax.awesomerealmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/awesomerealm.app/awesomerealm";
+			};
+			name = Release;
+		};
+		1848BDC41F2B3B64000AEB70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 59N8QSLF84;
+				INFOPLIST_FILE = awesomerealmUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MadisonDeanMax.awesomerealmUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = awesomerealm;
+			};
+			name = Debug;
+		};
+		1848BDC51F2B3B64000AEB70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 59N8QSLF84;
+				INFOPLIST_FILE = awesomerealmUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MadisonDeanMax.awesomerealmUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = awesomerealm;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1848BD8E1F2B3B64000AEB70 /* Build configuration list for PBXProject "awesomerealm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1848BDBB1F2B3B64000AEB70 /* Debug */,
+				1848BDBC1F2B3B64000AEB70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1848BDBD1F2B3B64000AEB70 /* Build configuration list for PBXNativeTarget "awesomerealm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1848BDBE1F2B3B64000AEB70 /* Debug */,
+				1848BDBF1F2B3B64000AEB70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1848BDC01F2B3B64000AEB70 /* Build configuration list for PBXNativeTarget "awesomerealmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1848BDC11F2B3B64000AEB70 /* Debug */,
+				1848BDC21F2B3B64000AEB70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1848BDC31F2B3B64000AEB70 /* Build configuration list for PBXNativeTarget "awesomerealmUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1848BDC41F2B3B64000AEB70 /* Debug */,
+				1848BDC51F2B3B64000AEB70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1848BD8B1F2B3B64000AEB70 /* Project object */;
+}
